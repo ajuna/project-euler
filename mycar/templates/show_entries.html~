@@ -1,0 +1,8 @@
+<!doctype html>
+{% block body %}
+  <ul class=entries>
+  {% for entry in entries %}
+    <li>{{ entry.name }}  {{ entry.district|safe}}  {{ entry.car|safe}}  {{ entry.number|safe}}  {{ entry.licence|safe}}
+  {% endfor %}
+  </ul>
+{% endblock %}
